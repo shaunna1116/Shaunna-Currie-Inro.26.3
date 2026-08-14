@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Bethany Elingston';
+    src: url('../fonts/Bethany Elingston.otf');
+}
+
+@font-face {
+    font-family: 'Griffiths';
+    src: url('../fonts/Griffiths.otf');
+}
+
+body {
+    background-color: #efebea;
+    color: #462d27;
+}
+
+h1 {
+    font-family: 'Griffiths', sans-serif;
+    font-size: 80px;
+    font-weight: 200;
+    letter-spacing: -.2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Griffiths', sans-serif;
+    font-size: 42px;
+    font-weight: 200;
+}
+
+p {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+li {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.profile-img {
+    max-width: 100%;
+    height: 700px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+#About {
+ margin: 10px;
+ padding: 10px;     
+}
+
+#Experience {
+    margin: 10px;
+    padding: 10px;
+}
+
+#Experience li {
+    background-color: #efebea;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #462d27;
+}
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#Experience ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#Contact {
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: right;
+}
+
+#Contact ul {
+    display: inline-block;
+    text-align: left;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+
