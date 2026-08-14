@@ -78,13 +78,13 @@ a {
     padding: 0;
 }
 
-#Contact {
+#Connect {
     margin-bottom: 10px;
     padding: 10px;
     text-align: right;
 }
 
-#Contact ul {
+#Connect ul {
     display: inline-block;
     text-align: left;
     display: flex;
