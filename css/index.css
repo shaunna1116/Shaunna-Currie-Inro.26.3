@@ -102,7 +102,7 @@ a {
     padding: 0;
 }
 
-#LeaveMessage form {
+#leave_message form {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -110,7 +110,7 @@ a {
     margin: 0 auto;
 }
 
-#LeaveMessage input {
+#leave_message input {
     width: 100%;
     padding: 12px;
     border: 1px solid #462d27;
@@ -120,7 +120,7 @@ a {
     box-sizing: border-box;
 }
 
-#LeaveMessage textarea {
+#leave_message textarea {
     width: 100%;
     padding: 44px;
     border: 1px solid #462d27;
@@ -130,19 +130,19 @@ a {
     box-sizing: border-box;
 }
 
-#LeaveMessage textarea {
+#leave_message textarea {
     resize: vertical;
     min-height: 120px;
 }
 
-#LeaveMessage button {
+#leave_message button {
     padding: 12px 20px;
     font-size: 16px;
     min-height: 44px;
     cursor: pointer;
 }
 
-#LeaveMessage button[type="submit"] {
+#leave_message button[type="submit"] {
     background-color: #462d27;
     color: #efebea;
     padding: 12px;
