@@ -102,4 +102,65 @@ a {
     padding: 0;
 }
 
+#LeaveMessage form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#LeaveMessage input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #462d27;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#LeaveMessage textarea {
+    width: 100%;
+    padding: 44px;
+    border: 1px solid #462d27;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+#LeaveMessage textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#LeaveMessage button {
+    padding: 12px 20px;
+    font-size: 16px;
+    min-height: 44px;
+    cursor: pointer;
+}
+
+#LeaveMessage button[type="submit"] {
+    background-color: #462d27;
+    color: #efebea;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+#Messages:has(ul:empty) {
+    display: none;
+}   
+
+#message-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
 
