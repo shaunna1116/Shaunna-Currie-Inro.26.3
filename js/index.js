@@ -27,23 +27,23 @@ const messageForm = document.querySelector('form[name="leave_message"]');
 messageForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
-  const userName = event.target.userName.value;
-  const userEmail = event.target.userEmail.value;
-  const userMessage = event.target.userMessage.value;
+  const userName = event.target.usersName.value;
+  const userEmail = event.target.usersEmail.value;
+  const userMessage = event.target.usersMessage.value;
 
   console.log(userName, userEmail, userMessage);
 
-  const messageSection = document.getElementById('Messages');
+  const messageSection = document.getElementById('messages');
   const messageList = messageSection.querySelector('ul');
  
 
   const newMessage = document.createElement('li');
 
-  newMessage.innerHTML = `<a href="mailto:${userEmail}">${userName}</a> <span> wrote: ${userMessage}</span>`;
+  newMessage.innerHTML = `<a href="mailto:${userEmail}">${userName}</a> <span>${userMessage}</span>`;
 
   const removeButton = document.createElement('button');
 
-  removeButton.innerText = 'Remove';
+  removeButton.innerText = 'remove';
 
   removeButton.type = 'button';
 

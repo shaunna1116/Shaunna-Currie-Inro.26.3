@@ -152,7 +152,7 @@ a {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-#Messages:has(ul:empty) {
+#messages:has(ul:empty) {
     display: none;
 }   
 
