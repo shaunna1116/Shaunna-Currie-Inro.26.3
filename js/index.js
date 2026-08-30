@@ -57,3 +57,29 @@ messageForm.addEventListener('submit', function(event) {
 
   event.target.reset();
 });
+
+fetch("https://api.github.com/users/shaunna1116/repos")
+.then(function(response) {
+  return response.json();
+})
+
+.then(function(data) {
+  let repositories = data;
+  console.log(repositories);
+
+  let projectSection = document.getElementById('Projects');
+  let projectList = projectSection.querySelector('ul');
+  console.log(projectList);
+
+  for (let i = 0; i < repositories.length; i++) {
+    const project = document.createElement('li');
+    project.innerText = repositories[i].name;
+    projectList.appendChild(project);
+  }
+})
+
+.catch(function(error) {
+  console.error('Error fetching repositories:', error);
+});
+
+
