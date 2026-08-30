@@ -161,6 +161,16 @@ a {
     padding: 0;
 }
 
+#Projects ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0px;
+}
+
+#Projects li {
+    margin-bottom: 10px;
+}
 
 
 
