@@ -50,6 +50,7 @@ function displayTitles() {
 
         const image = document.createElement('img');
 
+        image.referrerPolicy = 'no-referrer';
         image.src = imageUrl;
         image.alt = artworks[i].title;
 
@@ -120,7 +121,7 @@ function showArtwork(artworkId) {
             dimensions.textContent = 'Dimensions: ' + data.data.dimensions;
 
             const description = document.createElement('p');
-            description.textContent = data.data.description;
+            description.innerHTML = data.data.description;
 
             artworkDetails.appendChild(artist);
             artworkDetails.appendChild(date);

@@ -43,6 +43,25 @@ a {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #462d27;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .profile-img {
     max-width: 100%;
     height: 700px;
