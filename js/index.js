@@ -1,3 +1,4 @@
+// Create the footer and display the current year
 const body = document.querySelector('body');
 const footer = document.createElement('footer');
 
@@ -11,6 +12,7 @@ copyright.innerHTML = `&copy; Shaunna Currie ${thisYear}`;
 
 footer.append(copyright);
 
+// Add skills to the Skills section
 const skills = ['HTML', 'CSS', 'JavaScript', 'Git', 'GitHub'];
 
 const skillsSection = document.getElementById('Skills');
@@ -22,6 +24,8 @@ for (let i = 0; i < skills.length; i++) {
   skillsList.appendChild(skill);
 }
 
+
+// Handle the Leave a Message form
 const messageForm = document.querySelector('form[name="leave_message"]');
 
 messageForm.addEventListener('submit', function(event) {
@@ -39,14 +43,17 @@ messageForm.addEventListener('submit', function(event) {
 
   const newMessage = document.createElement('li');
 
-  newMessage.innerHTML = `<a href="mailto:${userEmail}">${userName}</a> <span>${userMessage}</span>`;
-
+newMessage.innerHTML = `
+    <a href="mailto:${userEmail}">${userName}</a>
+    <span>${userMessage}</span>
+`;
   const removeButton = document.createElement('button');
 
   removeButton.innerText = 'remove';
 
   removeButton.type = 'button';
 
+  // Remove the message when the remove button is clicked
   removeButton.addEventListener('click', function() {
     const entry = removeButton.parentNode;
     entry.remove();
@@ -58,6 +65,8 @@ messageForm.addEventListener('submit', function(event) {
   event.target.reset();
 });
 
+
+// Fetch and display GitHub repositories
 fetch("https://api.github.com/users/shaunna1116/repos")
 .then(function(response) {
   return response.json();
